@@ -1,5 +1,8 @@
 {
   "scripts": {
-    "start": "browser-sync start --server 'src' --files 'src' --single"
+    "start": "browser-sync start --logLevel debug --server 'src' --files 'src' --single"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
   }
 }

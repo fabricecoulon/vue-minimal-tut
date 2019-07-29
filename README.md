@@ -124,6 +124,17 @@ Now run `npm start`, this will start `browser-sync` and monitor the files under 
 Go to `localhost:3000` and check that when you edit the input box, the corresponding
 text message in between `{{` and `}}` changes as you type.
 
+If you have an error like `Cannot GET /` and in the Javascript console some error message like `Refused to execute inline script...` then you have to call `browser-sync` directly like this with a `npm` global install:
+
+```
+npm install -g browser-sync
+```
+
+Then, run it directly from the command line:
+```
+% browser-sync start --logLevel debug --server 'src' --files 'src' --single
+```
+
 
 # Level 2
 
